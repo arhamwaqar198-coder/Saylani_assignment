@@ -1,0 +1,639 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPRoBoTplZXoIY9e1MBzxOB",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/arhamwaqar198-coder/Saylani_assignment/blob/main/SaylaniASS2\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "### **NAME = ARHAM WAQAR(AI-516013)**"
+      ],
+      "metadata": {
+        "id": "tuGsFWwb9y6J"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 3,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zRVJ2PoQ46oB",
+        "outputId": "4655c867-bd01-441d-dc00-2e99b3b3e6da"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the length :10\n",
+            "Enter the width :20\n",
+            "The area of the rectangle is: 200.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "length = float(input(\"Enter the length :\"))\n",
+        "width = float(input(\"Enter the width :\"))\n",
+        "area = length * width\n",
+        "print(\"The area of the rectangle is:\", area)\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "radius = float(input(\"Enter the radius: \"))\n",
+        "circum = 2 * (22/7) * radius\n",
+        "print(\"The circumference is:\", circum)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-xIdyZu95Gxz",
+        "outputId": "409298ab-f483-4de7-fa9f-bf89488b3d7b"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter the radius: 5\n",
+            "The circumference is: 31.428571428571427\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "P = float(input(\"Enter principal amount: \"))\n",
+        "R = float(input(\"Enter rate of interest: \"))\n",
+        "T = float(input(\"Enter time: \"))\n",
+        "SI = (P * R * T) / 100\n",
+        "print(\"Simple Interest is:\", SI)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WwBjGMtU5ZgL",
+        "outputId": "1173e55f-b3c3-47e1-ef67-150f940466ca"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter principal amount: 100\n",
+            "Enter rate of interest: 5\n",
+            "Enter time: 5\n",
+            "Simple Interest is: 25.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "distance = float(input(\"Enter distance traveled:\"))\n",
+        "time = float(input(\"Enter time taken:\"))\n",
+        "speed = distance / time\n",
+        "print(f\"The speed of the object is: {speed} m/s\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-TqO3nm96ArZ",
+        "outputId": "a7838dd5-4e94-4c05-e311-ed07b7e1aa36"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter distance traveled:20\n",
+            "Enter time taken:2\n",
+            "The speed of the object is: 10.0 m/s\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "weight = float(input(\"Enter weight in kg: \"))\n",
+        "height = float(input(\"Enter height in meters: \"))\n",
+        "bmi = weight / (height ** 2)\n",
+        "print(f\"Your BMI is: {bmi}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "SuP5dQTV5w1g",
+        "outputId": "13e25c59-1083-47db-ebbe-d4dc824855cd"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter weight in kg: 72\n",
+            "Enter height in meters: 56\n",
+            "Your BMI is: 0.02295918367346939\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mass = float(input(\"Enter mass: \"))\n",
+        "acceleration = float(input(\"Enter acceleration: \"))\n",
+        "force = mass * acceleration\n",
+        "print(f\"force = {force}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xgTiepkm5UQr",
+        "outputId": "b913a003-7722-4010-9c43-84a279fe4231"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter mass: 200\n",
+            "Enter acceleration: 20\n",
+            "force = 4000.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "P = float(input(\"Enter principal amount: \"))\n",
+        "R = float(input(\"Enter annual interest rate: \")) / 100\n",
+        "N = int(input(\"Enter number of times interest compounded per year: \"))\n",
+        "T = float(input(\"Enter time in years: \"))\n",
+        "A = P * (1 + R/N) ** (T*T)\n",
+        "print(f\"The total amount after interest is:{A}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TWsfrx2f59bA",
+        "outputId": "84975a17-1f12-4bfe-8709-94afcd6404b8"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter principal amount: 1000\n",
+            "Enter annual interest rate: 5\n",
+            "Enter number of times interest compounded per year: 5\n",
+            "Enter time in years: 5\n",
+            "The total amount after interest is:1282.431995017234\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = float(input(\"Enter side a: \"))\n",
+        "b = float(input(\"Enter side b: \"))\n",
+        "c = float(input(\"Enter side c: \"))\n",
+        "peri = a + b + c\n",
+        "print(f\"The perimeter of the triangle is: {peri}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "s8zVGHiw60br",
+        "outputId": "e940425b-2074-42cc-d85b-04be9fb4206a"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter side a: 6\n",
+            "Enter side b: 6\n",
+            "Enter side c: 6\n",
+            "The perimeter of the triangle is: 18.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "r = float(input(\"Enter radius of sphere: \"))\n",
+        "volume = (4/3) * (22/7) * (r ** 3)\n",
+        "print(f\"Volume of the sphere is:{volume}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0Fz4R7OZ7D67",
+        "outputId": "9381a131-bc8e-453d-918c-8a90b724b8a1"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter radius of sphere: 5\n",
+            "Volume of the sphere is:523.8095238095237\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "mass = float(input(\"Enter mass in kg: \"))\n",
+        "velocity = float(input(\"Enter velocity: \"))\n",
+        "KE = 0.5 * mass * (velocity ** 2)\n",
+        "print(f\"The kinetic energy is: {KE} J\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cX5mZTST7PP6",
+        "outputId": "40b11ad6-464a-49e9-9c69-f50c28eaca36"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter mass in kg: 100\n",
+            "Enter velocity: 10\n",
+            "The kinetic energy is: 5000.0 J\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "a = float(input(\"Enter  a: \"))\n",
+        "b = float(input(\"Enter  b: \"))\n",
+        "c = float(input(\"Enter c: \"))\n",
+        "D = b**2 - 4*a*c\n",
+        "if D >= 0:\n",
+        "    root1 = (-b + math.sqrt(D)) / (2*a)\n",
+        "    root2 = (-b - math.sqrt(D)) / (2*a)\n",
+        "    print(\"The roots are:\", root1, \"and\", root2)\n",
+        "else:\n",
+        "    print(\"The equation has complex roots\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pFw3rTKN7aA6",
+        "outputId": "b776c193-faaf-4c02-99f3-3d5792b4276e"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter  a: 6\n",
+            "Enter  b: 6\n",
+            "Enter c: 6\n",
+            "The equation has complex roots\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "C = float(input(\"Enter temperature in Celsius: \"))\n",
+        "F = (C * 9/5) + 32\n",
+        "print(f\"Temperature in Fahrenheit is: {F}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "4oqGQAIx7rqr",
+        "outputId": "2fd1536b-eb4e-4cb6-b439-a560a13e00a3"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter temperature in Celsius: 30\n",
+            "Temperature in Fahrenheit is: 86.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "G = 6.674 * 10**-11\n",
+        "m1 = float(input(\"Enter mass : \"))\n",
+        "m2 = float(input(\"Enter mass: \"))\n",
+        "r = float(input(\"Enter distance : \"))\n",
+        "F = G * (m1 * m2) / (r ** 2)\n",
+        "print(f\"Gravitational force is: {F} N\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IjZJIfzh7--6",
+        "outputId": "dd2fcbe7-9ebc-42cf-bca5-d949d4eeea04"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter mass : 1000\n",
+            "Enter mass: 1000\n",
+            "Enter distance : 100\n",
+            "Gravitational force is: 6.673999999999999e-09 N\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r = float(input(\"Enter radius of cylinder: \"))\n",
+        "h = float(input(\"Enter height of cylinder: \"))\n",
+        "volume = (22/7) * (r ** 2) * h\n",
+        "print(f\"Volume of cylinder is: {volume}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9-ZNzTHX8W8q",
+        "outputId": "ba1b75ec-f8f0-4065-ccc6-b98f2001dd15"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter radius of cylinder: 5\n",
+            "Enter height of cylinder: 10\n",
+            "Volume of cylinder is: 785.7142857142857\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "F = float(input(\"Enter force : \"))\n",
+        "A = float(input(\"Enter area : \"))\n",
+        "P = F / A\n",
+        "print(f\"Pressure is:{P}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9d2SfnKX8n_q",
+        "outputId": "4f74a0ab-6c3e-4553-cdfb-df23e5781bb2"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter force : 50\n",
+            "Enter area : 10\n",
+            "Pressure is:5.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "V = float(input(\"Enter voltage (V): \"))\n",
+        "I = float(input(\"Enter current (A): \"))\n",
+        "P = V * I\n",
+        "print(f\"Electric power is:{P}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aCUP0Uvf80vK",
+        "outputId": "87e7b6ec-5e8a-452e-e144-c3a8ffb7f537"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter voltage (V): 20\n",
+            "Enter current (A): 10\n",
+            "Electric power is:200.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "r = float(input(\"Enter radius of circle: \"))\n",
+        "circumference = 2 * (22/7) * r\n",
+        "print(f\"Perimeter of circle is: {circumference}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_75HvNJE89p6",
+        "outputId": "2a075e7c-d0d7-4846-db50-60cb018aa0e5"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter radius of circle: 20\n",
+            "Perimeter of circle is: 125.71428571428571\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "PV = float(input(\"Enter present value: \"))\n",
+        "r = float(input(\"Enter annual interest rate (in %): \")) / 100\n",
+        "t = float(input(\"Enter time in years: \"))\n",
+        "FV = PV * (1 + r)**t\n",
+        "print(f\"Future value of investment is: {FV}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QPP4j9dX9Jva",
+        "outputId": "ab12ceac-ea0c-48e7-a293-d167cde134f1"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter present value: 100\n",
+            "Enter annual interest rate (in %): 5\n",
+            "Enter time in years: 5\n",
+            "Future value of investment is: 127.62815625000003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "f = float(input(\"Enter force in N: \"))\n",
+        "d = float(input(\"Enter distance in meters: \"))\n",
+        "theta = float(input(\"Enter angle between force and movement in degrees: \"))\n",
+        "W = f * d * math.cos(math.radians(theta))\n",
+        "print(f\"Work done is: {W}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8bpBZTgD9RWa",
+        "outputId": "aca4d072-adcd-4921-8a70-dfc3fefb2bad"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter force in N: 100\n",
+            "Enter distance in meters: 50\n",
+            "Enter angle between force and movement in degrees: 45\n",
+            "Work done is: 3535.533905932738\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "m = float(input(\"Enter mass in kg: \"))\n",
+        "c = float(input(\"Enter specific heat capacity: \"))\n",
+        "T1 = float(input(\"Enter initial temperature: \"))\n",
+        "T2 = float(input(\"Enter final temperature: \"))\n",
+        "Q = m * c * (T2 - T1)\n",
+        "print(f\"Heat transferred is: {Q}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "yS1FX2DN9eJK",
+        "outputId": "dac44639-8a46-4bc9-dcef-38664a4f0b3d"
+      },
+      "execution_count": 32,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter mass in kg: 10\n",
+            "Enter specific heat capacity: 2\n",
+            "Enter initial temperature: 45\n",
+            "Enter final temperature: 100\n",
+            "Heat transferred is: 1100.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "wWBZEh4U9se6"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "0AquIVI49wmG"
+      }
+    }
+  ]
+}
